@@ -1,0 +1,9 @@
+{% if latest_device_list %}
+    <ul>
+    {% for device in latest_device_list %}
+        <li><a href="{{ device.id }}">{{device.id}} {{ device.soil}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
