@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import  Device,DeviceRecord
 
 class DeviceAdmin(admin.ModelAdmin):
-    list_display =['id','soil']
+    list_display =['id','soil','macaddress']
     # raw_id_fields = ['device_id']
 
 class DeviceRecordAdmin(admin.ModelAdmin):
